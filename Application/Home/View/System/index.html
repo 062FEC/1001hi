@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{$site.cn_description}">
+    <meta name="Keywords" content="{$site.cn_keywords}">
+    <title>1001酒店系统-{$site.cn_title}</title>
+    <link type="text/css" href="__PUBLIC__/style/css/system.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="header2">
+      <div class="header2-wrap">
+        <h1 class="logo">
+          <a href="{:U('/Home/Index/index')}" title="1001HOTEL">1001HOTEL</a>
+        </h1>
+        <ul class="nav">
+          <li><a href="{:U('/Home/About/index')}">关于1001</a></li>
+          <li><a class="active" href="{:U('/Home/System/index')}">1001酒店系统</a></li>
+          <li><a href="{:U('/Home/Union/index')}">1001梦幻联盟</a></li>
+          <li><a href="{:U('/Home/Buiding/index')}">在建 1001酒店</a></li>
+          <li><a href="{:U('/Home/Info/index')}">1001资讯</a></li>
+          <li><a href="{:U('/Home/Join/index')}">联系1001</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="about-video">
+      <embed id="system-video" src="http://yuntv.letv.com/bcloud.swf" allowFullScreen="true" quality="high" width="1024" height="768" align="middle" allowScriptAccess="always" flashvars="{$video.cn_title}" type="application/x-shockwave-flash"></embed>
+     
+    </div>
+
+    <div class="subnav-placeholder">
+      <div class="subnav system-subnav">
+        <a class="current" href="#">酒店与业态设计</a>
+        <a href="#">T-BOX®房屋系统</a>
+        <a href="#">1001环保系统</a>
+        <a href="#">智能管家</a>
+        <a href="#">运营系统</a>
+        <a href="#">顾问管理</a>
+      </div>
+    </div>
+    
+    <div id="system-floor0" class="floor design">
+      <div class="floor-wrap">
+        <h2 class="floor-title">酒店与业态设计</h2>
+        <div class="design-banner">
+          <ul id="banner-list3" class="banner-list3">
+          <volist name="design" id="vol">
+            <li class="banner{$i-1} <eq name='i' value='1'>current</eq>" data-image="__UPLOADS__{$vol.images1}">
+              <p class="overlayer">{$vol.cn_description}</p>
+            </li>
+          </volist>
+          
+           
+          </ul>
+        </div>
+        <ol id="banner-ctrl3" class="banner-ctrl3">
+        <volist name="design" id="vo">
+          <li class="<eq name='i' value='1'>current</eq>">{$vo.cn_name}</li>
+         </volist>
+         <!--  
+          <li>项目策划与规划</li>
+          <li>景观、建筑及业态设计</li>
+          <li>酒店系统与运营设施设计</li>
+          <li>运营及财务模型设计</li>
+          -->
+        </ol>
+      </div>
+    </div>
+
+    <div id="system-floor1" class="floor housing">
+      <div class="floor-wrap">
+        <h2 class="floor-title">房屋系统</h2>
+        <div class="housing-banner">
+          <ul id="banner-list2" class="banner-list2">
+          <volist name="tbox" id="tb">
+            <li class="banner{$i-1} <eq name='i' value='1'>current</eq>" data-image="__UPLOADS__{$tb.images1}">
+              <p class="overlayer">{$tb.cn_name}</p>
+            </li>
+          </volist>
+ 
+          </ul>
+          <ol id="banner-ctrl2" class="banner-ctrl2">
+          	<volist name="tbox" id="tb">
+            <li class="<eq name='i' value='1'>current</eq>">{$i-1}</li>
+            </volist>
+
+          </ol>
+          <a id="btn-prev" class="btn-prev" href="#">&lt;</a>
+          <a id="btn-nxt" class="btn-nxt" href="#">&gt;</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="system-floor2" class="floor environmental">
+      <div class="floor-wrap">
+        <h2 class="floor-title">1001环保系统</h2>
+        <div class="environmental-box">
+          <div class="left-side">
+            <div class="environmental-video">
+              <embed id="system-video2" src="http://yuntv.letv.com/bcloud.swf" allowFullScreen="true" quality="high" width="1024" height="768" align="middle" allowScriptAccess="always" flashvars="{$theory.cn_title}" type="application/x-shockwave-flash"></embed>
+              
+            </div>
+            <div class="environmental-unit unit1">
+              <!--该unit直接显示overlayer层-->
+              <div id="environmental-unit-overlayer-solid" class="overlayer">
+              <!-- 水源净化自循环系统原理 -->
+                {$theory.cn_content}
+              </div>
+            </div>
+            <div class="environmental-unit unit2">
+              <img src="__UPLOADS__{$zhibiao.images1}" width="346" height="292">
+              <div class="overlayer">
+              <!-- 净化系统核心指标 -->
+                {$zhibiao.cn_content}
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="environmental-unit unit3">
+              <img src="__UPLOADS__{$system.images1}" width="397" height="283">
+              <div class="overlayer">
+              <!-- 水源净化自循环系统优点 -->
+                {$system.cn_content}
+              </div>
+            </div>
+            <div class="environmental-unit unit4">
+              <img src="__UPLOADS__{$bucao.images1}" width="397" height="414">
+              <div class="overlayer">
+              <!-- 有机洗涤用品和布草 -->
+               {$bucao.cn_content}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="system-floor3" class="floor housekeeper">
+      <div class="floor-wrap">
+        <h2 class="floor-title">智能管家</h2>
+        <ul class="housekeeper-list">
+        <volist name="housekeeper" id="hk">
+          <li>
+            <img src="__UPLOADS__{$hk.images1}" width="277px" height="257px">
+            <div class="overlayer">
+              <p style="line-height: 32px;color: #c6dcd6;font-size: 18px;">{$hk.cn_name}</p>
+            </div>
+          </li>
+        </volist>  
+        
+        </ul>
+      </div>
+    </div>
+
+    <div id="system-floor4" class="floor operation">
+      <div class="floor-wrap">
+        <h2 class="floor-title">运营系统</h2>
+        <ul class="operation-list">
+        <volist name="operation" id="opa">
+          <li>
+            <img src="__UPLOADS__{$opa.images1}" width="376" height="223">
+            <div class="overlayer">
+              {$opa.cn_content}
+            </div>
+          </li>
+        </volist>
+       
+        </ul>
+      </div>
+    </div>
+
+    <div id="system-floor5" class="floor consulting">
+      <div class="floor-wrap">
+        <h2 class="floor-title">酒店顾问管理</h2>
+        <ul class="consulting-list">
+        <volist name="counselor" id="cs">
+          <li>
+            <img src="__UPLOADS__{$cs.images1}" width="577" height="355">
+            <div class="overlayer">{$cs.cn_content}</div>
+          </li>
+        </volist>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="floor joinus">
+      <div class="floor-wrap">
+        <h2 class="floor-title">加盟1001</h2>
+        <dl class="join-steps">
+          <dt>1001野奢度假酒店加盟流程</dt>
+          <dd>
+            <span>参观了解<br>1001 HOTEL</span>
+            <i class="icon-arrow"></i>
+          </dd>
+          <dd>
+            <span>有意向者提交<br>加盟申请</span>
+            <i class="icon-arrow"></i>
+          </dd>
+          <dd>
+            <span>品牌委员会<br>门槛调查</span>
+            <i class="icon-arrow"></i>
+          </dd>
+          <dd>
+            <span>接受规划设计要求<br>愿意加入1001网络</span>
+            <i class="icon-arrow"></i>
+          </dd>
+          <dd class="last">
+            <span>项目总体规划<br>酒店业态设计</span>
+            <span>低价格购买<br>T-box®系统</span>
+            <span>酒店运营设计<br>酒店管理体系</span>
+            <span>品牌推广支撑<br>客源服务支持</span>
+          </dd>
+        </dl>
+        <a class="icon-download" href="<empty name='join.images2' >javascript:void(0)<else/>__UPLOADS__{$join.images2}</empty>">DOWNLOAD</a>
+      </div>
+    </div>
+
+     <!-- 包含底部文件 -->
+      <include file="Public:foot"/>
+    <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/js/common.js"></script>
+    <script src="__PUBLIC__/js/system.js"></script>
+  </body>
+</html>

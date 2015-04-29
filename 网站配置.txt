@@ -1,0 +1,8 @@
+1001酒店改版说明
+数据库地址：hdm-041.hichina.com
+db_name:hdm0410259
+db_pass:10011001
+db_type:mysql
+
+后台登录地址：http://www.1001hi.com/newwebadmin/
+管理员：admin 初始密码:a1b2c3

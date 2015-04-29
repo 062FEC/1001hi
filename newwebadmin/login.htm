@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>后台管理</title>
+<link rel="stylesheet" media="screen" href="css/qbt.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+  if(top.location.href!=self.location.href) top.location.href=self.location.href;
+</script>
+</head>
+
+<body>
+<div class="loginlogo">
+  <img src="images/qbt_01.png" width="198" height="56" alt="后台管理">
+</div><!--loginlogo-->
+
+<div class="notification notifyError loginNotify">Invalid username or password. (Type anything)</div>
+
+<iframe src="about:blank" width="0" height="0" id="login_frame" name="login_frame" style="display:none"></iframe>
+<form action="login.php" method="post" name="login_form" target="login_frame" id="login_form">
+<div class="loginbox">
+  <div class="loginbox_inner">
+      <div class="loginbox_content">
+            <input style="background-position: 0px 0px;" name="user" id="user" class="username" type="text" value="用户名" onfocus="if(this.value=='用户名'){this.value=''}" onblur="if(this.value==''){this.value='用户名'}">
+            <input style="background-position: 0px 0px;" id="password_s" class="password" type="text" value="密码" readonly='readonly' onfocus="$('#password_s').hide();$('#password').show().focus();" />
+            <input style="background-position: 0px 0px;display:none" name="password" id="password" class="password" type="password" onblur="if(this.value==''){ $('#password_s').show();$('#password').hide(); }">
+            <button name="submit" class="submit" type="submit">登录</button>
+        </div>
+  </div><!--loginbox_inner-->
+</div><!--loginbox-->
+
+<div class="loginoption">
+  <a href="" class="cant">尊敬的站点管理维护员，请及时修改你的初始管理用户密码。</a>
+
+    <input name="remember" id="remember" type="checkbox" value="1" style="float:left;"><span>记住用户名</span>
+</div>
+
+<script type="text/javascript">
+  var strcookie=document.cookie;
+  var arrcookie=strcookie.split("; ");
+  var userId;
+  for(var i=0;i<arrcookie.length;i++){
+    var arr=arrcookie[i].split("=");
+    if("a_username"==arr[0]){
+      $('#user').val(decodeURI(arr[1]));
+      $('#remember').attr('checked','checked');
+      break;
+    }
+  }
+</script>
+
+</form>
+</body>
+</html>

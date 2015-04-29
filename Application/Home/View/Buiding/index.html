@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{$site.cn_description}">
+    <meta name="Keywords" content="{$site.cn_keywords}">
+    <title>在建1001酒店-{$site.cn_title}</title>
+    <link type="text/css" href="__PUBLIC__/style/css/building.css" rel="stylesheet">
+	
+	
+  </head>
+
+  <body>
+    <div class="header2">
+      <div class="header2-wrap">
+        <h1 class="logo">
+          <a href="{:U('/Home/Index/index')}" title="1001HOTEL">1001HOTEL</a>
+        </h1>
+        <ul class="nav">
+          <li><a href="{:U('/Home/About/index')}">关于1001</a></li>
+          <li><a href="{:U('/Home/System/index')}">1001酒店系统</a></li>
+          <li><a href="{:U('/Home/Union/index')}">1001梦幻联盟</a></li>
+          <li><a class="active" href="{:U('/Home/Buiding/index')}">在建 1001酒店</a></li>
+          <li><a href="{:U('/Home/Info/index')}">1001资讯</a></li>
+          <li><a href="{:U('/Home/Join/index')}">联系1001</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="banner2"></div>
+
+    <div class="floor building">
+      <div class="floor-wrap">
+        <ul class="building-list">
+		<foreach name="buiding" item="vo" key="k">
+          <li class="<eq name='k' value='0'>first</eq>">
+            <img class="pic" src="__UPLOADS__{$vo.images1}" >
+            <div class="des">
+              <p class="name">{$vo.cn_name}</p>
+              <span class="location"><i class="icon-location"></i>{$vo.cn_title}</span>
+              <div class="overlayer">
+                <p style="line-height:26px;font-size: 16px;color: #fff;">{$vo.cn_description}</p>
+              </div>
+            </div>
+          </li>
+		</foreach>
+		
+        </ul>
+      </div>
+
+      <div class="building-more">
+        <a href="{:U('Buiding/index',array('more'=>1))}">显示更多</a>
+      </div>
+
+      <div class="popup-erweima">
+        <div class="popup-main">
+          <a class="btn-close" href="#">关闭</a>
+          <h3 class="title">即将开幕</h3>
+          <p class="des">扫二维码，立即了解更多1001梦幻体验！</p>
+          <img src="__UPLOADS__{$code.images1}" width="279" height="279">
+        </div>
+      </div>
+    </div>
+
+    <!-- 包含底部文件 -->
+      <include file="Public:foot"/>
+    <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/js/building.js"></script>
+  </body>
+</html>

@@ -1,0 +1,543 @@
+[ 2015-04-20T21:01:36+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.220075s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.034394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.034575s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.2010s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0805s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0048s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0721s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000226s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000399s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164726s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.164889s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016338s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.019990s ]
+INFO: [ app_end ] --END-- [ RunTime:0.020119s ]
+
+[ 2015-04-20T21:01:53+08:00 ] 127.0.0.1 /1001hotel/index.php/Home/Index/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002041s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003173s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0301s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000245s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000398s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.076479s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.076638s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001835s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001964s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003050s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003257s ]
+
+[ 2015-04-20T21:03:47+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001678s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004136s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0034s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0285s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000298s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042240s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042515s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002012s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002795s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002925s ]
+
+[ 2015-04-20T21:09:40+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002506s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003097s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003372s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:1.6087s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0062s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0061s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0317s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000317s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000679s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050511s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003705s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007505s ]
+
+[ 2015-04-20T21:10:59+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002792s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003130s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0317s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0077s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0299s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030806s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002181s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002467s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002527s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002773s ]
+
+[ 2015-04-20T21:15:55+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006662s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0329s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0064s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0060s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0056s ]
+ERR: SQLSTATE[HY000]: General error: 1 Can't create/write to file 'C:\Windows\TEMP\#sql_178_0.MYI' (Errcode: 13)
+
+[ 2015-04-20T21:16:07+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005230s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005654s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0024s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0318s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000162s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.079422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.079593s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.011634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011767s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012827s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012980s ]
+
+[ 2015-04-20T21:17:58+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001390s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001840s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0367s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0039s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0361s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0036s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000260s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023271s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002613s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003608s ]
+
+[ 2015-04-20T21:18:03+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004259s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0338s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0084s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0043s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000269s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037295s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037461s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002757s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003100s ]
+
+[ 2015-04-20T21:20:41+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003552s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0347s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0036s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0334s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0035s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000300s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002235s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003260s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003414s ]
+
+[ 2015-04-20T21:23:47+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002532s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003515s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0339s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0095s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0378s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0031s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028692s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028913s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002070s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002550s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002692s ]
+
+[ 2015-04-20T21:30:38+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005832s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006063s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0321s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0093s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0360s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000130s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028556s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002978s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003108s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003247s ]
+
+[ 2015-04-20T21:32:23+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003122s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003302s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0446s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0051s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0119s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0072s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000126s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000255s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030954s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031139s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006372s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006503s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004115s ]
+
+[ 2015-04-20T21:34:27+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000398s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004667s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014790s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0403s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000262s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000484s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.037021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037467s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002634s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002785s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003622s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003979s ]
+
+[ 2015-04-20T21:35:41+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012217s ]
+ERR: SQLSTATE[HY000]: General error: 1 Can't create/write to file 'C:\Windows\TEMP\#sql_178_0.MYI' (Errcode: 13)
+
+[ 2015-04-20T21:35:46+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001929s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001831s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002003s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0347s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0064s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0037s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0391s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000282s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001950s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002083s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008255s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008422s ]
+
+[ 2015-04-20T21:36:56+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.014721s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0416s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0097s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0044s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0474s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0046s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033463s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004287s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004426s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004060s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004348s ]
+
+[ 2015-04-20T21:37:00+08:00 ] 127.0.0.1 /1001hotel/index.php/Home/About/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001616s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003994s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0401s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0056s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0054s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 57 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 11 ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 15 ) LIMIT 1   [ RunTime:0.0066s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 16 ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 17 ) LIMIT 1   [ RunTime:0.0086s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 18 ) LIMIT 1   [ RunTime:0.0138s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 91 ) ORDER BY num desc  [ RunTime:0.0046s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 92 ) ORDER BY num desc  [ RunTime:0.0038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000359s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000556s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053626s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001279s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001419s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005578s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007960s ]
+
+[ 2015-04-20T21:38:04+08:00 ] 127.0.0.1 /1001hotel/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001902s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003916s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0066s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0052s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 102 ) ORDER BY num desc  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `videos` [ RunTime:0.0361s ]
+SQL: SELECT * FROM `videos` WHERE ( id = 1  ) LIMIT 1   [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032126s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032302s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002939s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002651s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002863s ]
+
+[ 2015-04-20T21:38:09+08:00 ] 127.0.0.1 /1001hotel/index.php/Home/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002186s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0365s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 57 ) LIMIT 1   [ RunTime:0.0056s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 11 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 15 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 16 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 17 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 18 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0054s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 91 ) ORDER BY num desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 92 ) ORDER BY num desc  [ RunTime:0.0057s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000182s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000323s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.043690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001238s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002016s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002237s ]
+
+[ 2015-04-20T21:39:10+08:00 ] 127.0.0.1 /1001hotel/index.php/Home/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002631s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003527s ]
+SQL: SHOW COLUMNS FROM `atype_info` [ RunTime:0.0467s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 10 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 104 ) ORDER BY num desc  [ RunTime:0.0021s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 57 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 11 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 12 ) LIMIT 1   [ RunTime:0.0052s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 13 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 14 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 15 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 16 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 17 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 18 ) LIMIT 1   [ RunTime:0.0068s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 19 ) LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `atype_info` WHERE ( id = 20 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 91 ) ORDER BY num desc  [ RunTime:0.0028s ]
+SQL: SELECT * FROM `atype_info` WHERE ( type_id = 92 ) ORDER BY num desc  [ RunTime:0.0058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000497s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049677s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050091s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002008s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009410s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009731s ]
+

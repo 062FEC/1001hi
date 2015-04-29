@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="{$site.cn_description}">
+    <meta name="Keywords" content="{$site.cn_keywords}">
+    <title>关于1001-{$site.cn_title}</title>
+    <link type="text/css" href="__PUBLIC__/style/css/normalize.css" rel="stylesheet">
+    <link type="text/css" href="__PUBLIC__/style/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="header2">
+      <div class="header2-wrap">
+        <h1 class="logo">
+          <a href="{:U('/Home/Index/index')}" title="1001HOTEL">1001HOTEL</a>
+        </h1>
+        <ul class="nav">
+          <li><a class="active" href="{:U('/Home/About/index')}">关于1001</a></li>
+          <li><a href="{:U('/Home/System/index')}">1001酒店系统</a></li>
+          <li><a href="#">1001梦幻联盟</a></li>
+          <li><a href="#">在建 1001酒店</a></li>
+          <li><a href="#">1001资讯</a></li>
+          <li><a href="#">联系1001</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="banner2">
+      <img src="__UPLOADS__{$banner.images1}" alt="一千个美丽的风景，一个不变的习惯">
+    </div>
+
+    <div class="subnav-placeholder">
+      <div class="subnav">
+        <ul class="subnav-list">
+          <li><a class="current" href="#">公司简介</a></li>
+          <li><a href="#">品牌故事</a></li>
+          <li><a href="#">获奖与专利</a></li>
+          <li><a href="#">旗下品牌</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="about-floor0" class="overview">
+      <div class="overview-wrap">
+        <h2 class="floor-title">公司简介</h2>
+
+        <div class="section section1">
+          <img class="fl" src="__UPLOADS__{$jianjie.images1}" width="482" height="305">
+          <h3 class="section-title">{$jianjie.cn_title}</h3>
+          <p>{$jianjie.cn_content}</p>
+        </div>
+
+        <div class="section section2">
+          <img class="fr" src="__UPLOADS__{$bless.images1}" width="511" height="291">
+          <h3 class="section-title">{$bless.cn_title}</h3>
+          {$bless.cn_content}
+        </div>
+
+        <div class="section section2">
+          <h3 class="section-title">业务板块</h3>
+          <ul class="business-block">
+            <li>
+              <img src="__UPLOADS__{$bkone.images1}" width="370" height="360" alt="">
+              <div class="overlayer">
+                <a class="btn-close" href="#">关闭</a>
+                <p class="txt1">{$bkone.cn_content}</p>
+                <p class="txt2">详情点击：</p>
+                <p class="link"><a href="{$bkone.cn_keywords}" target="_blank">{$bkone.cn_keywords}</a></p>
+              </div>
+            </li>
+            <li>
+              <img src="__UPLOADS__{$bktwo.images1}" width="370" height="360" alt="">
+              <div class="overlayer">
+                <a class="btn-close" href="#">关闭</a>
+                <p class="txt1">{$bktwo.cn_content}</p>
+                <p class="txt2">详情点击：</p>
+                <p class="link"><a href="{$bktwo.cn_keywords}" target="_blank">{$bktwo.cn_keywords}</a></p>
+              </div>
+            </li>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-floor1" class="story">
+      <div class="story-wrap">
+        <h2 class="floor-title">品牌与故事</h2>
+        <dl class="story-list">
+          <dt><span>1001 HOTEL 的由来</span></dt>
+          <dd class="left">
+            <p class="date">
+              <span class="dot"></span>
+              1908年
+            </p>
+            <div class="story-box">
+              <img class="album" src="__UPLOADS__{$story_one.images1}" width="64" height="64">
+              <img class="big-album" style="margin-top: -117px;" src="__UPLOADS__{$story_one.images2}" width="368" height="235">
+              <p class="msg">{$story_one.cn_description}</p>
+            </div>
+          </dd>
+          <dd class="right">
+            <p class="date">
+              <span class="dot"></span>
+              1950年
+            </p>
+            <div class="story-box">
+              <img class="album" data-img="__UPLOADS__{$story_two.images1}" src="__UPLOADS__{$story_two.images1}" width="64" height="64">
+              <img class="big-album" style="margin-top: -145px;" src="__UPLOADS__{$story_two.images2}" width="511" height="291">
+              <p class="msg">{$story_two.cn_description}</p>
+            </div>
+          </dd>
+          <dt><span>一千零一夜之梦</span></dt>
+          <dd class="left">
+            <p class="date">
+              <span class="dot"></span>
+              2006年
+            </p>
+            <div class="story-box">
+              <img class="album" data-img="__UPLOADS__{$story_three.images1}" src="__UPLOADS__{$story_three.images1}" width="64" height="64">
+              <img class="big-album" style="margin-top: -179px;" src="__UPLOADS__{$story_three.images2}" width="397" height="349">
+              <p class="msg">{$story_three.cn_description}</p>
+            </div>
+          </dd>
+          <dt><span>梦想启航，全新的1001 HOTEL</span></dt>
+          <dd class="right">
+            <p class="date">
+              <span class="dot"></span>
+              2008年
+            </p>
+            <div class="story-box">
+              <img class="album" data-img="__UPLOADS__{$story_four.images1}" src="__UPLOADS__{$story_four.images1}" width="64" height="64">
+              <img class="big-album" style="margin-top: -315px;" src="__UPLOADS__{$story_four.images2}" width="370" height="630">
+              <p class="msg">{$story_four.cn_description}</p>
+            </div>
+          </dd>
+          <dt><span>全新的1001 HOTEL正式进入亚洲</span></dt>
+          <dd class="left">
+            <p class="date">
+              <span class="dot"></span>
+              2011年
+            </p>
+            <div class="story-box">
+              <img class="album" data-img="__UPLOADS__{$story_five.images1}" src="__UPLOADS__{$story_five.images1}" width="64" height="64">
+              <img class="big-album" style="margin-top: -154px;" src="__UPLOADS__{$story_five.images2}" width="439" height="308">
+              <p class="msg">{$story_five.cn_description}</p>
+            </div>
+          </dd>
+          <dt><span>梦想起航</span></dt>
+        </dl>
+        <div class="summary">
+          <div class="summary-wrap">
+            {$story_go.cn_content}
+            <p class="txt1">1001 HOTEL</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-floor2" class="adwards">
+      <div class="adwards-wrap">
+        <h2 class="floor-title">获奖与专利</h2>
+        <ul class="adwards-list">
+		<foreach name="adword" item="v">
+          <li>
+            <img src="__UPLOADS__{$v.images1}" width="312" height="435" alt="{$v.cn_name}">
+            <p>{$v.cn_name}</p>
+            <span>{$v.cn_keywords}</span>
+          </li>
+		</foreach>
+        </ul>
+      </div>
+    </div>
+
+    <div id="about-floor3" class="brand">
+      <div class="brand-wrap">
+        <h2 class="floor-title">旗下品牌</h2>
+        <ul class="brand-list">
+		<foreach name="brand" item="v" key="k">
+          <li><a class="list{$k}" data-img="__UPLOADS__{$v.images2}" href="javascript:void(0)">{$v.cn_name}</a></li>
+		</foreach>
+
+        </ul>
+
+        <div class="popup-brand">
+          <div class="popup-main">
+            <a class="btn-close" href="#">关闭</a>
+            <img src="" width="960" height="540">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 包含底部文件 -->
+      <include file="Public:foot"/>
+    <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/js/about.js"></script>
+  </body>
+</html>

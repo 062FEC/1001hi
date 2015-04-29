@@ -1,0 +1,6 @@
+[ 2015-04-16T22:53:37+08:00 ] 127.0.0.1 /1001hotel/index.php/Index/about.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002016s ]
+ERR: 无法加载模块:Index
+
