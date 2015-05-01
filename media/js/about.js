@@ -82,8 +82,12 @@ $(function(){
 
 	//品牌与故事插图hover框
 	$.each($('.story-box .album'), function (index,item){
+		var $bigImg = $(item).siblings('.big-album');
+		$bigImg.css({
+			'marginTop': -$bigImg.height()/2
+		})
 		$(item).mouseenter(function(){
-			$(item).siblings('.big-album').fadeIn(200);
+			$bigImg.fadeIn(200);
 		})
 	})
 	$.each($('.big-album'), function (index,item){
