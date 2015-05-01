@@ -136,8 +136,18 @@ $('.banner-ctrl').css({
 })
 
 var screenHeight = $(window).height();
-$('.banner').height(screenHeight);
+var headerHeight2 = $('.header2').height();
+$('#banner1').height(screenHeight);
+$('#banner2').height(screenHeight-headerHeight2);
 $(window).resize(function(){
   var screenHeight = $(window).height();
-  $('.banner').height(screenHeight);
+  var headerHeight2 = $('.header2').height();
+  $('#banner1').height(screenHeight);
+  $('#banner2').height(screenHeight-headerHeight2);
 })
+
+$("#banner-list").myFade({
+  speed: 1000,
+  timer: 5000,
+  btnCtrl: 'banner-ctrl'
+});

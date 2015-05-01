@@ -22,13 +22,6 @@ $(function(){
 		detectScreen();
 	})
 
-	//banner切换
-  $("#banner-list").myFade({
-    speed: 1000,
-    timer: 5000,
-    btnCtrl: 'banner-ctrl'
-  });
-
 	$('.btn-video-arrow a').click(function(){
 		$('body,html').animate({
 			'scrollTop': $('.video-area').offset().top
