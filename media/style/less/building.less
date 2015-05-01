@@ -1,0 +1,117 @@
+@charset 'utf-8';
+@import 'normalize.less';
+@import 'common.less';
+
+/*union.html css*/
+
+.building{
+  .floor-wrap{
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+}
+.building-list{
+  .clearfix;
+  width: 1190px;
+  margin-top: 50px;
+  li{
+    .clearfix;
+    float: left;
+    width: 381px;
+    height: 270px;
+    overflow: hidden;
+    margin: 0 14px 14px 0;
+    .pic{
+      float: left;
+      width: 381px;
+      height: 206px;
+      cursor: pointer;
+    }
+    .des{
+      .clearfix;
+      position: relative;
+      float: left;
+      width: 379px;
+      height: 61px;
+      border: 1px solid #cedada;
+      color: #286866;
+      font-size: 22px;
+      background-color: #f6f6f6;
+      .name{
+        float: left;
+        text-indent: 24px;
+        line-height: 61px;
+      }
+      .location{
+        position: relative;
+        float: left;
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        margin: 17px 0 0 20px;
+        text-indent: 24px;
+        color: #c59a6d;
+        font-size: 14px;
+        .icon-location{
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+      .overlayer{
+        position: absolute;
+        left: -1px;
+        // top: -1px;
+        top: 63px;
+        width: 341px;
+        height: 55px;
+        padding: 6px 20px;
+        background: rgba(0,0,0,0.7);
+      }
+    }
+    &.first{
+      width: 776px;
+      height: 554px;
+      .pic{
+        width: 776px;
+        height: 461px;
+      }
+      .des{
+        width: 774px;
+        height: 90px;
+        .name{
+          font-size: 32px;
+          line-height: 90px;
+        }
+        .location{
+          margin-top: 32px;
+          font-size: 18px;
+        }
+        .overlayer{
+          width: 696px;
+          height: 80px;
+          // top: -2px;
+          top: 92px;
+          padding: 6px 40px;
+        }
+      }
+    }
+  }
+}
+.building-more{
+  width: 384px;
+  height: 90px;
+  margin: 0 auto 84px auto;
+  padding: 15px;
+  background-color: #f6f6f6;
+  a{
+    display: block;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    color: #1b5e5d;
+    font-size: 22px;
+    border: 1px solid #1b5e5d;
+  }
+}
+/*end of union.html css*/
