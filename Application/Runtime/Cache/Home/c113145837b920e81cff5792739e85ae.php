@@ -5,7 +5,7 @@
     <meta name="description" content="<?php echo ($site["cn_description"]); ?>">
     <meta name="Keywords" content="<?php echo ($site["cn_keywords"]); ?>">
     <title>1001酒店系统-<?php echo ($site["cn_title"]); ?></title>
-    <link type="text/css" href="/1001hotel/Public/style/css/system.css" rel="stylesheet">
+    <link type="text/css" href="/Public/style/css/system.css" rel="stylesheet">
   </head>
 
   <body>
@@ -46,7 +46,7 @@
         <h2 class="floor-title">酒店与业态设计</h2>
         <div class="design-banner">
           <ul id="banner-list3" class="banner-list3">
-          <?php if(is_array($design)): $i = 0; $__LIST__ = $design;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vol): $mod = ($i % 2 );++$i;?><li class="banner<?php echo ($i-1); ?> <?php if(($i) == "1"): ?>current<?php endif; ?>" data-image="/1001hotel/uploadfiles/<?php echo ($vol["images1"]); ?>">
+          <?php if(is_array($design)): $i = 0; $__LIST__ = $design;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vol): $mod = ($i % 2 );++$i;?><li class="banner<?php echo ($i-1); ?> <?php if(($i) == "1"): ?>current<?php endif; ?>" data-image="/uploadfiles/<?php echo ($vol["images1"]); ?>">
               <p class="overlayer"><?php echo ($vol["cn_description"]); ?></p>
             </li><?php endforeach; endif; else: echo "" ;endif; ?>
           
@@ -70,7 +70,7 @@
         <h2 class="floor-title">房屋系统</h2>
         <div class="housing-banner">
           <ul id="banner-list2" class="banner-list2">
-          <?php if(is_array($tbox)): $i = 0; $__LIST__ = $tbox;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tb): $mod = ($i % 2 );++$i;?><li class="banner<?php echo ($i-1); ?> <?php if(($i) == "1"): ?>current<?php endif; ?>" data-image="/1001hotel/uploadfiles/<?php echo ($tb["images1"]); ?>">
+          <?php if(is_array($tbox)): $i = 0; $__LIST__ = $tbox;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$tb): $mod = ($i % 2 );++$i;?><li class="banner<?php echo ($i-1); ?> <?php if(($i) == "1"): ?>current<?php endif; ?>" data-image="/uploadfiles/<?php echo ($tb["images1"]); ?>">
               <p class="overlayer"><?php echo ($tb["cn_name"]); ?></p>
             </li><?php endforeach; endif; else: echo "" ;endif; ?>
  
@@ -102,7 +102,7 @@
               </div>
             </div>
             <div class="environmental-unit unit2">
-              <img src="/1001hotel/uploadfiles/<?php echo ($zhibiao["images1"]); ?>" width="346" height="292">
+              <img src="/uploadfiles/<?php echo ($zhibiao["images1"]); ?>" width="346" height="292">
               <div class="overlayer">
               <!-- 净化系统核心指标 -->
                 <?php echo ($zhibiao["cn_content"]); ?>
@@ -111,14 +111,14 @@
           </div>
           <div class="right-side">
             <div class="environmental-unit unit3">
-              <img src="/1001hotel/uploadfiles/<?php echo ($system["images1"]); ?>" width="397" height="283">
+              <img src="/uploadfiles/<?php echo ($system["images1"]); ?>" width="397" height="283">
               <div class="overlayer">
               <!-- 水源净化自循环系统优点 -->
                 <?php echo ($system["cn_content"]); ?>
               </div>
             </div>
             <div class="environmental-unit unit4">
-              <img src="/1001hotel/uploadfiles/<?php echo ($bucao["images1"]); ?>" width="397" height="414">
+              <img src="/uploadfiles/<?php echo ($bucao["images1"]); ?>" width="397" height="414">
               <div class="overlayer">
               <!-- 有机洗涤用品和布草 -->
                <?php echo ($bucao["cn_content"]); ?>
@@ -134,7 +134,7 @@
         <h2 class="floor-title">智能管家</h2>
         <ul class="housekeeper-list">
         <?php if(is_array($housekeeper)): $i = 0; $__LIST__ = $housekeeper;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$hk): $mod = ($i % 2 );++$i;?><li>
-            <img src="/1001hotel/uploadfiles/<?php echo ($hk["images1"]); ?>" width="277px" height="257px">
+            <img src="/uploadfiles/<?php echo ($hk["images1"]); ?>" width="277px" height="257px">
             <div class="overlayer">
               <p style="line-height: 32px;color: #c6dcd6;font-size: 18px;"><?php echo ($hk["cn_name"]); ?></p>
             </div>
@@ -149,7 +149,7 @@
         <h2 class="floor-title">运营系统</h2>
         <ul class="operation-list">
         <?php if(is_array($operation)): $i = 0; $__LIST__ = $operation;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$opa): $mod = ($i % 2 );++$i;?><li>
-            <img src="/1001hotel/uploadfiles/<?php echo ($opa["images1"]); ?>" width="376" height="223">
+            <img src="/uploadfiles/<?php echo ($opa["images1"]); ?>" width="376" height="223">
             <div class="overlayer">
               <?php echo ($opa["cn_content"]); ?>
             </div>
@@ -164,7 +164,7 @@
         <h2 class="floor-title">酒店顾问管理</h2>
         <ul class="consulting-list">
         <?php if(is_array($counselor)): $i = 0; $__LIST__ = $counselor;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$cs): $mod = ($i % 2 );++$i;?><li>
-            <img src="/1001hotel/uploadfiles/<?php echo ($cs["images1"]); ?>" width="577" height="355">
+            <img src="/uploadfiles/<?php echo ($cs["images1"]); ?>" width="577" height="355">
             <div class="overlayer"><?php echo ($cs["cn_content"]); ?></div>
           </li><?php endforeach; endif; else: echo "" ;endif; ?>
 
@@ -200,14 +200,14 @@
             <span>品牌推广支撑<br>客源服务支持</span>
           </dd>
         </dl>
-        <a class="icon-download" href="<?php if(empty($join["images2"])): ?>javascript:void(0)<?php else: ?>/1001hotel/uploadfiles/<?php echo ($join["images2"]); endif; ?>">DOWNLOAD</a>
+        <a class="icon-download" href="<?php if(empty($join["images2"])): ?>javascript:void(0)<?php else: ?>/uploadfiles/<?php echo ($join["images2"]); endif; ?>">DOWNLOAD</a>
       </div>
     </div>
 
      <!-- 包含底部文件 -->
       <div class="footer">
 <div class="footer-wrap">
-  <p class="copyright"><?php echo ($site["cn_content"]); ?></p>
+  <p class="copyright">粤ICP备案号12041777</p>
   <ul class="footer-links">
 
 	<?php if(is_array($link)): $i = 0; $__LIST__ = $link;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a class="link<?php echo ($i); ?>" href="<?php echo ($vo["cn_title"]); ?>" title="<?php echo ($vo["cn_keywords"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -215,8 +215,8 @@
   </ul>
 </div>
 </div>
-    <script src="/1001hotel/Public/js/jquery-1.9.1.min.js"></script>
-    <script src="/1001hotel/Public/js/common.js"></script>
-    <script src="/1001hotel/Public/js/system.js"></script>
+    <script src="/Public/js/jquery-1.9.1.min.js"></script>
+    <script src="/Public/js/common.js"></script>
+    <script src="/Public/js/system.js"></script>
   </body>
 </html>

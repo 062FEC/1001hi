@@ -5,7 +5,7 @@
     <meta name="description" content="<?php echo ($site["cn_description"]); ?>">
     <meta name="Keywords" content="<?php echo ($site["cn_keywords"]); ?>">
     <title>关于1001-<?php echo ($site["cn_title"]); ?></title>
-    <link type="text/css" href="/1001hotel/Public/style/css/about.css" rel="stylesheet">
+    <link type="text/css" href="/Public/style/css/about.css" rel="stylesheet">
   </head>
 
   <body>
@@ -25,7 +25,24 @@
       </div>
     </div>
 
-    <div class="banner2"></div>
+    <div id="banner2" class="banner">
+      <ul id="banner-list" class="banner-list">
+        <li class="banner0 current" data-image="/uploadfiles/20150430/201504301002256463.jpg"></li>
+        <li class="banner1" data-image="/uploadfiles/20150430/201504301001413478.jpg"></li>
+        <li class="banner2" data-image="/uploadfiles/20150430/201504300959324448.jpg"></li>
+        <li class="banner3" data-image="/uploadfiles/20150430/201504300959003500.jpg"></li>
+        <li class="banner4" data-image="/uploadfiles/20150430/201504300958012986.jpg"></li>
+        <li class="banner5" data-image="/uploadfiles/20150430/201504300943232740.jpg"></li>
+      </ul>
+      <ol id="banner-ctrl" class="banner-ctrl">
+        <li class="current">0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ol>
+    </div>
 
     <div class="subnav-placeholder">
       <div class="subnav">
@@ -41,13 +58,13 @@
         <h2 class="floor-title">公司简介</h2>
 
         <div class="section">
-          <img style="float:left;margin: 0 40px 48px 0;" src="/1001hotel/uploadfiles/<?php echo ($jianjie["images1"]); ?>" width="482" height="305">
+          <img style="float:left;margin: 0 40px 48px 0;" src="/uploadfiles/<?php echo ($jianjie["images1"]); ?>" width="482" height="305">
           <h3 style="margin-bottom: 20px;font-size: 22px;font-weight: normal;color: #c59a6d;"><?php echo ($jianjie["cn_title"]); ?></h3>
           <?php echo ($jianjie["cn_content"]); ?>
         </div>
 
         <div class="section">
-          <img style="float:right;margin: 0 0 48px 40px;" src="/1001hotel/uploadfiles/<?php echo ($bless["images1"]); ?>" width="511" height="291">
+          <img style="float:right;margin: 0 0 48px 40px;" src="/uploadfiles/<?php echo ($bless["images1"]); ?>" width="511" height="291">
           <h3 style="margin-bottom: 20px;font-size: 22px;font-weight: normal;color: #c59a6d;"><?php echo ($bless["cn_title"]); ?></h3>
           <?php echo ($bless["cn_content"]); ?>
         </div>
@@ -56,7 +73,7 @@
           <h3 class="section-title">业务板块</h3>
           <ul class="business-block">
             <li>
-              <img src="/1001hotel/uploadfiles/<?php echo ($bkone["images1"]); ?>" width="370" height="360" alt="">
+              <img src="/uploadfiles/<?php echo ($bkone["images1"]); ?>" width="370" height="360" alt="">
               <div class="overlayer">
                 <a class="btn-close" href="#">关闭</a>
                 <?php echo ($bkone["cn_content"]); ?>
@@ -65,7 +82,7 @@
               </div>
             </li>
             <li>
-              <img src="/1001hotel/uploadfiles/<?php echo ($bktwo["images1"]); ?>" width="370" height="360" alt="">
+              <img src="/uploadfiles/<?php echo ($bktwo["images1"]); ?>" width="370" height="360" alt="">
               <div class="overlayer">
                 <a class="btn-close" href="#">关闭</a>
                 <?php echo ($bktwo["cn_content"]); ?>
@@ -89,8 +106,8 @@
               1908年
             </p>
             <div class="story-box">
-              <img class="album" src="/1001hotel/uploadfiles/<?php echo ($story_one["images1"]); ?>" width="64" height="64">
-              <img class="big-album" style="margin-top: -145px;" src="/1001hotel/uploadfiles/<?php echo ($story_one["images2"]); ?>" width="511" height="291">
+              <img class="album" src="/uploadfiles/<?php echo ($story_one["images1"]); ?>" width="64" height="64">
+              <img class="big-album" src="/uploadfiles/<?php echo ($story_one["images2"]); ?>">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;"><?php echo ($story_one["cn_description"]); ?></p>
             </div>
           </dd>
@@ -100,8 +117,8 @@
               1950年
             </p>
             <div class="story-box">
-              <img class="album" data-img="/1001hotel/uploadfiles/<?php echo ($story_two["images1"]); ?>" src="/1001hotel/uploadfiles/<?php echo ($story_two["images1"]); ?>" width="64" height="64">
-              <img class="big-album" style="margin-top: -117px;" src="/1001hotel/uploadfiles/<?php echo ($story_two["images2"]); ?>" width="368" height="235">
+              <img class="album" data-img="/uploadfiles/<?php echo ($story_two["images1"]); ?>" src="/uploadfiles/<?php echo ($story_two["images1"]); ?>" width="64" height="64">
+              <img class="big-album" src="/uploadfiles/<?php echo ($story_two["images2"]); ?>">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;"><?php echo ($story_two["cn_description"]); ?></p>
             </div>
           </dd>
@@ -112,8 +129,8 @@
               2006年
             </p>
             <div class="story-box">
-              <img class="album" data-img="/1001hotel/uploadfiles/<?php echo ($story_three["images1"]); ?>" src="/1001hotel/uploadfiles/<?php echo ($story_three["images1"]); ?>" width="64" height="64">
-              <img class="big-album" style="margin-top: -179px;" src="/1001hotel/uploadfiles/<?php echo ($story_three["images2"]); ?>" width="397" height="349">
+              <img class="album" data-img="/uploadfiles/<?php echo ($story_three["images1"]); ?>" src="/uploadfiles/<?php echo ($story_three["images1"]); ?>" width="64" height="64">
+              <img class="big-album" src="/uploadfiles/<?php echo ($story_three["images2"]); ?>">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;"><?php echo ($story_three["cn_description"]); ?></p>
             </div>
           </dd>
@@ -124,8 +141,8 @@
               2008年
             </p>
             <div class="story-box">
-              <img class="album" data-img="/1001hotel/uploadfiles/<?php echo ($story_four["images1"]); ?>" src="/1001hotel/uploadfiles/<?php echo ($story_four["images1"]); ?>" width="64" height="64">
-              <img class="big-album" style="margin-top: -315px;" src="/1001hotel/uploadfiles/<?php echo ($story_four["images2"]); ?>" width="370" height="630">
+              <img class="album" data-img="/uploadfiles/<?php echo ($story_four["images1"]); ?>" src="/uploadfiles/<?php echo ($story_four["images1"]); ?>" width="64" height="64">
+              <img class="big-album" src="/uploadfiles/<?php echo ($story_four["images2"]); ?>">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;"><?php echo ($story_four["cn_description"]); ?></p>
             </div>
           </dd>
@@ -136,8 +153,8 @@
               2011年
             </p>
             <div class="story-box">
-              <img class="album" data-img="/1001hotel/uploadfiles/<?php echo ($story_five["images1"]); ?>" src="/1001hotel/uploadfiles/<?php echo ($story_five["images1"]); ?>" width="64" height="64">
-              <img class="big-album" style="margin-top: -154px;" src="/1001hotel/uploadfiles/<?php echo ($story_five["images2"]); ?>" width="439" height="308">
+              <img class="album" data-img="/uploadfiles/<?php echo ($story_five["images1"]); ?>" src="/uploadfiles/<?php echo ($story_five["images1"]); ?>" width="64" height="64">
+              <img class="big-album" src="/uploadfiles/<?php echo ($story_five["images2"]); ?>">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;"><?php echo ($story_five["cn_description"]); ?></p>
             </div>
           </dd>
@@ -158,7 +175,7 @@
         <div id="adwards-slider">
           <ul class="adwards-list">
 			<?php if(is_array($adword)): foreach($adword as $key=>$v): ?><li>
-              <img src="/1001hotel/uploadfiles/<?php echo ($v["images1"]); ?>" width="312" height="435" alt="<?php echo ($v["cn_name"]); ?>">
+              <img src="/uploadfiles/<?php echo ($v["images1"]); ?>" width="312" height="435" alt="<?php echo ($v["cn_name"]); ?>">
               <p><?php echo ($v["cn_name"]); ?></p>
               <span><?php echo ($v["cn_keywords"]); ?></span>
             </li><?php endforeach; endif; ?>
@@ -171,7 +188,12 @@
       <div class="floor-wrap">
         <h2 class="floor-title">旗下品牌</h2>
         <ul class="brand-list">
-		<?php if(is_array($brand)): foreach($brand as $k=>$v): ?><li><a class="list<?php echo ($k); ?>" data-img="/1001hotel/uploadfiles/<?php echo ($v["images2"]); ?>" href="javascript:void(0)"><?php echo ($v["cn_name"]); ?></a></li><?php endforeach; endif; ?>
+		<!-- <?php if(is_array($brand)): foreach($brand as $k=>$v): ?><li><a class="list<?php echo ($k); ?>" data-img="/uploadfiles/<?php echo ($v["images2"]); ?>" href="javascript:void(0)"><?php echo ($v["cn_name"]); ?></a></li><?php endforeach; endif; ?> -->
+          <li><a class="list0" data-img="/uploadfiles/20150430/201504300854379591.jpg" href="#"><img src="/Public/images/brand1.png"></a></li>
+          <li><a class="list1" data-img="/uploadfiles/20150430/201504300858378211.jpg" href="#"><img src="/Public/images/brand2.png"></a></li>
+          <li><a class="list2" data-img="/uploadfiles/20150430/201504300859074054.jpg" href="#"><img src="/Public/images/brand3.png"></a></li>
+          <li><a class="list3" data-img="/uploadfiles/20150430/201504300859522268.jpg" href="#"><img src="/Public/images/brand4.png"></a></li>
+          <li><a class="list4" data-img="/uploadfiles/20150430/201504300900525656.jpg" href="#"><img src="/Public/images/brand5.png"></a></li>
         </ul>
 
         <div class="popup-brand">
@@ -186,7 +208,7 @@
     <!-- 包含底部文件 -->
       <div class="footer">
 <div class="footer-wrap">
-  <p class="copyright"><?php echo ($site["cn_content"]); ?></p>
+  <p class="copyright">粤ICP备案号12041777</p>
   <ul class="footer-links">
 
 	<?php if(is_array($link)): $i = 0; $__LIST__ = $link;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a class="link<?php echo ($i); ?>" href="<?php echo ($vo["cn_title"]); ?>" title="<?php echo ($vo["cn_keywords"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -194,7 +216,8 @@
   </ul>
 </div>
 </div>
-    <script src="/1001hotel/Public/js/jquery-1.9.1.min.js"></script>
-    <script src="/1001hotel/Public/js/about.js"></script>
+    <script src="/Public/js/jquery-1.9.1.min.js"></script>
+    <script src="/Public/js/common.js"></script>
+    <script src="/Public/js/about.js"></script>
   </body>
 </html>

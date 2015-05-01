@@ -5,7 +5,7 @@
     <meta name="description" content="<?php echo ($site["cn_description"]); ?>">
     <meta name="Keywords" content="<?php echo ($site["cn_keywords"]); ?>">
     <title><?php echo ($site["cn_title"]); ?></title>
-    <link type="text/css" href="/1001hotel/Public/style/css/index.css" rel="stylesheet">
+    <link type="text/css" href="/Public/style/css/index.css" rel="stylesheet">
   </head>
 
   <body>
@@ -23,18 +23,18 @@
       </ul>
     </div>
 
-    <div class="banner" style="height:421px;">
+    <div id="banner1" class="banner" style="height:421px;">
       <ul id="banner-list" class="banner-list">
-		<?php if(is_array($banner)): foreach($banner as $k=>$v): ?><li class="banner<?php echo ($k); ?> <?php if(($k) == "0"): ?>current<?php endif; ?>" data-image="/1001hotel/uploadfiles/<?php echo ($v["images1"]); ?>">
+		<?php if(is_array($banner)): foreach($banner as $k=>$v): ?><li class="banner<?php echo ($k); ?> <?php if(($k) == "0"): ?>current<?php endif; ?>" data-image="/uploadfiles/<?php echo ($v["images1"]); ?>">
         </li><?php endforeach; endif; ?>
 		<!--
-        <li class="banner1" data-image="/1001hotel/Public/images/banner2.jpg">
+        <li class="banner1" data-image="/Public/images/banner2.jpg">
 
         </li>
-        <li class="banner2" data-image="/1001hotel/Public/images/banner3.jpg">
+        <li class="banner2" data-image="/Public/images/banner3.jpg">
 
         </li>
-        <li class="banner3" data-image="/1001hotel/Public/images/banner4.jpg">
+        <li class="banner3" data-image="/Public/images/banner4.jpg">
 
         </li>
 		-->
@@ -57,7 +57,7 @@
 		<!-- 包含底部文件 -->
       <div class="footer">
 <div class="footer-wrap">
-  <p class="copyright"><?php echo ($site["cn_content"]); ?></p>
+  <p class="copyright">粤ICP备案号12041777</p>
   <ul class="footer-links">
 
 	<?php if(is_array($link)): $i = 0; $__LIST__ = $link;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a class="link<?php echo ($i); ?>" href="<?php echo ($vo["cn_title"]); ?>" title="<?php echo ($vo["cn_keywords"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -67,8 +67,8 @@
 </div>
     </div>
 
-    <script src="/1001hotel/Public/js/jquery-1.9.1.min.js"></script>
-    <script src="/1001hotel/Public/js/common.js"></script>
-    <script src="/1001hotel/Public/js/index.js"></script>
+    <script src="/Public/js/jquery-1.9.1.min.js"></script>
+    <script src="/Public/js/common.js"></script>
+    <script src="/Public/js/index.js"></script>
   </body>
 </html>

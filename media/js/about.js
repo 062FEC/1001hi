@@ -103,21 +103,22 @@ $(function(){
 	var adwardWidth = $('.adwards-list li').width();
 	var adwardMarginR = parseInt($('.adwards-list li').css('margin-right'));
 	var adwardLen = $('.adwards-list li').length;
-	var clumns = parseInt(adwardLen/3);
 	var adwardFlag = 0;
 	var $adwarSlider = $('.adwards-list');
 	$('.adwards-list').width((adwardWidth+adwardMarginR)*adwardLen);
-	var slide = function(){
-		adwardFlag++;
-		if(adwardFlag>clumns){
-			adwardFlag = 0;
+	if(adwardLen>3){
+		var slide = function(){
+			adwardFlag++;
+			if(adwardFlag>adwardLen-3){
+				adwardFlag = 0;
+			}
+			$adwarSlider.animate({
+				'left': -(adwardWidth+adwardMarginR)*adwardFlag
+			}, 500, function() {
+				
+			});
 		}
-		$adwarSlider.animate({
-			'left': -(adwardWidth+adwardMarginR)*3*adwardFlag
-		}, 500, function() {
-			
-		});
+		var slideTimer = window.setInterval(slide, 4000);
 	}
-	var slideTimer = window.setInterval(slide, 4000);
 })
 //end of about.html

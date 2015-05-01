@@ -5,7 +5,7 @@
     <meta name="description" content="<?php echo ($site["cn_description"]); ?>">
     <meta name="Keywords" content="<?php echo ($site["cn_keywords"]); ?>">
     <title>1001梦幻联盟-<?php echo ($site["cn_title"]); ?></title>
-    <link type="text/css" href="/1001hotel/Public/style/css/union.css" rel="stylesheet">
+    <link type="text/css" href="/Public/style/css/union.css" rel="stylesheet">
   </head>
 
   <body>
@@ -25,15 +25,31 @@
       </div>
     </div>
 
-    <div class="banner2">
-      <img src="/1001hotel/Public/images/about_banner.jpg" alt="一千个美丽的风景，一个不变的习惯">
+    <div id="banner2" class="banner">
+      <ul id="banner-list" class="banner-list">
+        <li class="banner0 current" data-image="/uploadfiles/20150430/201504301002256463.jpg"></li>
+        <li class="banner1" data-image="/uploadfiles/20150430/201504301001413478.jpg"></li>
+        <li class="banner2" data-image="/uploadfiles/20150430/201504300959324448.jpg"></li>
+        <li class="banner3" data-image="/uploadfiles/20150430/201504300959003500.jpg"></li>
+        <li class="banner4" data-image="/uploadfiles/20150430/201504300958012986.jpg"></li>
+        <li class="banner5" data-image="/uploadfiles/20150430/201504300943232740.jpg"></li>
+      </ul>
+      <ol id="banner-ctrl" class="banner-ctrl">
+        <li class="current">0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ol>
     </div>
+
 
     <div class="floor union">
       <div class="floor-wrap">
         <h2 class="floor-title">公司简介</h2>
         <div class="section">
-          <img style="float: left;" src="/1001hotel/uploadfiles/<?php echo ($ceo["images1"]); ?>" width="519" height="272">
+          <img style="float: left;" src="/uploadfiles/<?php echo ($ceo["images1"]); ?>" width="519" height="272">
           <div class="des">
             <p style="font-size:20px;color:#c59a6d;"><?php echo ($ceo["cn_title"]); ?></p>
             <p style="width:136px;height: 4px;margin:22px 0;background-color: #c59a6d;"></p>
@@ -54,7 +70,7 @@
         </div>
 
         <div class="section">
-          <img style="float: left;" src="/1001hotel/uploadfiles/<?php echo ($xuanze["images1"]); ?>" width="519" height="272">
+          <img style="float: left;" src="/uploadfiles/<?php echo ($xuanze["images1"]); ?>" width="519" height="272">
           <div class="des">
             <p style="font-size:20px;color:#c59a6d;"><?php echo ($xuanze["cn_title"]); ?></p>
             <p style="width:136px;height: 4px;margin:22px 0;background-color: #c59a6d;"></p>
@@ -75,7 +91,7 @@
         </div>
 
         <div class="section">
-          <img style="float: left;" src="/1001hotel/uploadfiles/<?php echo ($join["images1"]); ?>" width="519" height="272">
+          <img style="float: left;" src="/uploadfiles/<?php echo ($join["images1"]); ?>" width="519" height="272">
           <div class="des">
             <p style="font-size:20px;color:#c59a6d;"><?php echo ($join["cn_title"]); ?></p>
             <p style="width:136px;height: 4px;margin:22px 0;background-color: #c59a6d;"></p>
@@ -104,7 +120,7 @@
     <!-- 包含底部文件 -->
       <div class="footer">
 <div class="footer-wrap">
-  <p class="copyright"><?php echo ($site["cn_content"]); ?></p>
+  <p class="copyright">粤ICP备案号12041777</p>
   <ul class="footer-links">
 
 	<?php if(is_array($link)): $i = 0; $__LIST__ = $link;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a class="link<?php echo ($i); ?>" href="<?php echo ($vo["cn_title"]); ?>" title="<?php echo ($vo["cn_keywords"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -112,7 +128,8 @@
   </ul>
 </div>
 </div>
-    <script src="/1001hotel/Public/js/jquery-1.9.1.min.js"></script>
-    <script src="/1001hotel/Public/js/union.js"></script>
+    <script src="/Public/js/jquery-1.9.1.min.js"></script>
+    <script src="/Public/js/common.js"></script>
+    <script src="/Public/js/union.js"></script>
   </body>
 </html>

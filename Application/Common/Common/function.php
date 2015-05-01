@@ -29,10 +29,10 @@ function rp($f_str)
 function send_mail($to, $subject = 'No subject', $body) 
 { 
 $loc_host = "1001hotel"; //发信计算机名，可随意 
-$smtp_acc = "service1001hotel@126.com"; //Smtp认证的用户名，类似fish1240@fishcat.com.cn，或者fish1240 
+$smtp_acc = "service1001hotel@sina.com"; //Smtp认证的用户名，类似fish1240@fishcat.com.cn，或者fish1240 
 $smtp_pass="10011001"; //Smtp认证的密码，一般等同pop3密码 
-$smtp_host="smtp.126.com"; //SMTP服务器地址，类似 smtp.tom.com 
-$from="service1001hotel@126.com"; //发信人Email地址，你的发信信箱地址
+$smtp_host="smtp.sina.com"; //SMTP服务器地址，类似 smtp.tom.com 
+$from="service1001hotel@sina.com"; //发信人Email地址，你的发信信箱地址
 $headers = "Content-Type: text/html; charset=\"utf-8\"\r\nContent-Transfer-Encoding: base64"; 
 $lb="\r\n"; //linebreak
 //utf-8

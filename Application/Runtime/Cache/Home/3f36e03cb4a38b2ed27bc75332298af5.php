@@ -5,7 +5,7 @@
     <meta name="description" content="<?php echo ($site["cn_description"]); ?>">
     <meta name="Keywords" content="<?php echo ($site["cn_keywords"]); ?>">
     <title>1001资讯-<?php echo ($site["cn_title"]); ?></title>
-    <link type="text/css" href="/1001hotel/Public/style/css/info.css" rel="stylesheet">
+    <link type="text/css" href="/Public/style/css/info.css" rel="stylesheet">
   </head>
 
   <body>
@@ -25,7 +25,25 @@
       </div>
     </div>
 
-    <div class="banner2"></div>
+    <div id="banner2" class="banner">
+      <ul id="banner-list" class="banner-list">
+        <li class="banner0 current" data-image="/uploadfiles/20150430/201504301002256463.jpg"></li>
+        <li class="banner1" data-image="/uploadfiles/20150430/201504301001413478.jpg"></li>
+        <li class="banner2" data-image="/uploadfiles/20150430/201504300959324448.jpg"></li>
+        <li class="banner3" data-image="/uploadfiles/20150430/201504300959003500.jpg"></li>
+        <li class="banner4" data-image="/uploadfiles/20150430/201504300958012986.jpg"></li>
+        <li class="banner5" data-image="/uploadfiles/20150430/201504300943232740.jpg"></li>
+      </ul>
+      <ol id="banner-ctrl" class="banner-ctrl">
+        <li class="current">0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ol>
+    </div>
+
 
     <div class="floor info">
       <div class="floor-wrap">
@@ -52,10 +70,10 @@
         <?php if(is_array($info)): $i = 0; $__LIST__ = $info;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$data): $mod = ($i % 2 );++$i;?><div class="section">
           <div class="left-side">
             <p style="height: 60px;color: #989898;font-size: 32px;"><?php echo ($data["month"]); ?></p>
-            <?php if($data["type_id"] != 118): ?><img src="/1001hotel/uploadfiles/<?php echo ($data["images1"]); ?>" width="438" height="278">
+            <?php if($data["type_id"] != 118): ?><img src="/uploadfiles/<?php echo ($data["images1"]); ?>" width="438" height="278">
             <?php else: ?>
             <a href="javascript:void(0)" onclick="openvideo('<?php echo ($data["id"]); ?>')">
-            <img src="/1001hotel/uploadfiles/<?php echo ($data["images1"]); ?>" width="438" height="278">
+            <img src="/uploadfiles/<?php echo ($data["images1"]); ?>" width="438" height="278">
             </a><?php endif; ?>
             
           </div>
@@ -91,7 +109,7 @@
     <!-- 包含底部文件 -->
       <div class="footer">
 <div class="footer-wrap">
-  <p class="copyright"><?php echo ($site["cn_content"]); ?></p>
+  <p class="copyright">粤ICP备案号12041777</p>
   <ul class="footer-links">
 
 	<?php if(is_array($link)): $i = 0; $__LIST__ = $link;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a class="link<?php echo ($i); ?>" href="<?php echo ($vo["cn_title"]); ?>" title="<?php echo ($vo["cn_keywords"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -99,8 +117,9 @@
   </ul>
 </div>
 </div>
-    <script src="/1001hotel/Public/js/jquery-1.9.1.min.js"></script>
-    <script src="/1001hotel/Public/js/info.js"></script>
+    <script src="/Public/js/jquery-1.9.1.min.js"></script>
+    <script src="/Public/js/common.js"></script>
+    <script src="/Public/js/info.js"></script>
     <script type="text/javascript">
     	//打开视频播放器
     	function openvideo(id){

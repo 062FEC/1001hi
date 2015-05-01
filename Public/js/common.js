@@ -122,3 +122,32 @@ $.fn.extend({
     })
   }
 })
+
+
+$.each($('.banner-list li'), function (index, item){
+  var bgImg = $(item).data('image');
+  $(item).css({
+    'background': 'url(' + bgImg + ') no-repeat center center',
+    'background-size': 'cover'
+  })
+})
+$('.banner-ctrl').css({
+  'margin-left': -$('.banner-ctrl').width()/2
+})
+
+var screenHeight = $(window).height();
+var headerHeight2 = $('.header2').height();
+$('#banner1').height(screenHeight);
+$('#banner2').height(screenHeight-headerHeight2);
+$(window).resize(function(){
+  var screenHeight = $(window).height();
+  var headerHeight2 = $('.header2').height();
+  $('#banner1').height(screenHeight);
+  $('#banner2').height(screenHeight-headerHeight2);
+})
+
+$("#banner-list").myFade({
+  speed: 1000,
+  timer: 5000,
+  btnCtrl: 'banner-ctrl'
+});

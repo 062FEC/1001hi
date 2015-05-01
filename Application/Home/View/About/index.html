@@ -25,7 +25,24 @@
       </div>
     </div>
 
-    <div class="banner2"></div>
+    <div id="banner2" class="banner">
+      <ul id="banner-list" class="banner-list">
+        <li class="banner0 current" data-image="/uploadfiles/20150430/201504301002256463.jpg"></li>
+        <li class="banner1" data-image="/uploadfiles/20150430/201504301001413478.jpg"></li>
+        <li class="banner2" data-image="/uploadfiles/20150430/201504300959324448.jpg"></li>
+        <li class="banner3" data-image="/uploadfiles/20150430/201504300959003500.jpg"></li>
+        <li class="banner4" data-image="/uploadfiles/20150430/201504300958012986.jpg"></li>
+        <li class="banner5" data-image="/uploadfiles/20150430/201504300943232740.jpg"></li>
+      </ul>
+      <ol id="banner-ctrl" class="banner-ctrl">
+        <li class="current">0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ol>
+    </div>
 
     <div class="subnav-placeholder">
       <div class="subnav">
@@ -90,7 +107,7 @@
             </p>
             <div class="story-box">
               <img class="album" src="__UPLOADS__{$story_one.images1}" width="64" height="64">
-              <img class="big-album" style="margin-top: -145px;" src="__UPLOADS__{$story_one.images2}" width="511" height="291">
+              <img class="big-album" src="__UPLOADS__{$story_one.images2}">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;">{$story_one.cn_description}</p>
             </div>
           </dd>
@@ -101,7 +118,7 @@
             </p>
             <div class="story-box">
               <img class="album" data-img="__UPLOADS__{$story_two.images1}" src="__UPLOADS__{$story_two.images1}" width="64" height="64">
-              <img class="big-album" style="margin-top: -117px;" src="__UPLOADS__{$story_two.images2}" width="368" height="235">
+              <img class="big-album" src="__UPLOADS__{$story_two.images2}">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;">{$story_two.cn_description}</p>
             </div>
           </dd>
@@ -113,7 +130,7 @@
             </p>
             <div class="story-box">
               <img class="album" data-img="__UPLOADS__{$story_three.images1}" src="__UPLOADS__{$story_three.images1}" width="64" height="64">
-              <img class="big-album" style="margin-top: -179px;" src="__UPLOADS__{$story_three.images2}" width="397" height="349">
+              <img class="big-album" src="__UPLOADS__{$story_three.images2}">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;">{$story_three.cn_description}</p>
             </div>
           </dd>
@@ -125,7 +142,7 @@
             </p>
             <div class="story-box">
               <img class="album" data-img="__UPLOADS__{$story_four.images1}" src="__UPLOADS__{$story_four.images1}" width="64" height="64">
-              <img class="big-album" style="margin-top: -315px;" src="__UPLOADS__{$story_four.images2}" width="370" height="630">
+              <img class="big-album" src="__UPLOADS__{$story_four.images2}">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;">{$story_four.cn_description}</p>
             </div>
           </dd>
@@ -137,7 +154,7 @@
             </p>
             <div class="story-box">
               <img class="album" data-img="__UPLOADS__{$story_five.images1}" src="__UPLOADS__{$story_five.images1}" width="64" height="64">
-              <img class="big-album" style="margin-top: -154px;" src="__UPLOADS__{$story_five.images2}" width="439" height="308">
+              <img class="big-album" src="__UPLOADS__{$story_five.images2}">
               <p style="float: right;width: 268px;color: #000;line-height: 24px;font-size: 15px;">{$story_five.cn_description}</p>
             </div>
           </dd>
@@ -173,9 +190,14 @@
       <div class="floor-wrap">
         <h2 class="floor-title">旗下品牌</h2>
         <ul class="brand-list">
-		<foreach name="brand" item="v" key="k">
+		<!-- <foreach name="brand" item="v" key="k">
           <li><a class="list{$k}" data-img="__UPLOADS__{$v.images2}" href="javascript:void(0)">{$v.cn_name}</a></li>
-          </foreach>
+          </foreach> -->
+          <li><a class="list0" data-img="/uploadfiles/20150430/201504300854379591.jpg" href="#"><img src="/Public/images/brand1.png"></a></li>
+          <li><a class="list1" data-img="/uploadfiles/20150430/201504300858378211.jpg" href="#"><img src="/Public/images/brand2.png"></a></li>
+          <li><a class="list2" data-img="/uploadfiles/20150430/201504300859074054.jpg" href="#"><img src="/Public/images/brand3.png"></a></li>
+          <li><a class="list3" data-img="/uploadfiles/20150430/201504300859522268.jpg" href="#"><img src="/Public/images/brand4.png"></a></li>
+          <li><a class="list4" data-img="/uploadfiles/20150430/201504300900525656.jpg" href="#"><img src="/Public/images/brand5.png"></a></li>
         </ul>
 
         <div class="popup-brand">
@@ -190,6 +212,7 @@
     <!-- 包含底部文件 -->
       <include file="Public:foot"/>
     <script src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+    <script src="__PUBLIC__/js/common.js"></script>
     <script src="__PUBLIC__/js/about.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@
     <meta name="description" content="<?php echo ($site["cn_description"]); ?>">
     <meta name="Keywords" content="<?php echo ($site["cn_keywords"]); ?>">
     <title>联系1001-<?php echo ($site["cn_title"]); ?></title>
-    <link type="text/css" href="/1001hotel/Public/style/css/join.css" rel="stylesheet">
+    <link type="text/css" href="/Public/style/css/join.css" rel="stylesheet">
   </head>
 
   <body>
@@ -25,7 +25,25 @@
       </div>
     </div>
 
-    <div class="banner2"></div>
+    <div id="banner2" class="banner">
+      <ul id="banner-list" class="banner-list">
+        <li class="banner0 current" data-image="/uploadfiles/20150430/201504301002256463.jpg"></li>
+        <li class="banner1" data-image="/uploadfiles/20150430/201504301001413478.jpg"></li>
+        <li class="banner2" data-image="/uploadfiles/20150430/201504300959324448.jpg"></li>
+        <li class="banner3" data-image="/uploadfiles/20150430/201504300959003500.jpg"></li>
+        <li class="banner4" data-image="/uploadfiles/20150430/201504300958012986.jpg"></li>
+        <li class="banner5" data-image="/uploadfiles/20150430/201504300943232740.jpg"></li>
+      </ul>
+      <ol id="banner-ctrl" class="banner-ctrl">
+        <li class="current">0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+      </ol>
+    </div>
+
 
     <div class="subnav-placeholder">
       <div class="subnav join-subnav">
@@ -80,7 +98,7 @@
     <div id="join-floor1" class="floor join-unit">
       <div class="floor-wrap">
         <div class="join-us">
-          <img class="fr" src="/1001hotel/Public/images/join-pic1.png" width="292" height="329">
+          <img class="fr" src="/Public/images/join-pic1.png" width="292" height="329">
           <div class="section">
             <h2 class="floor-title">加入我们</h2>
             <p style="line-height: 26px;margin-bottom:32px;">1001 HOTEL目前正在寻找有梦想的人才加入中国大陆团队。</p>
@@ -90,7 +108,7 @@
         </div>
         <div class="to-apply">
           <div class="join-us">
-            <img class="fl" src="/1001hotel/Public/images/join-pic2.png" width="288" height="194">
+            <img class="fl" src="/Public/images/join-pic2.png" width="288" height="194">
             <div class="section">
               <h2 class="floor-title">如何报名</h2>
               <p style="line-height: 26px;margin-bottom:32px;">请把你的个人简历和自荐信发到以下邮箱：<a href="mailto:info1001hotel@126.com">info1001hotel@126.com</a></p>
@@ -103,7 +121,7 @@
     <!-- 包含底部文件 -->
       <div class="footer">
 <div class="footer-wrap">
-  <p class="copyright"><?php echo ($site["cn_content"]); ?></p>
+  <p class="copyright">粤ICP备案号12041777</p>
   <ul class="footer-links">
 
 	<?php if(is_array($link)): $i = 0; $__LIST__ = $link;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li><a class="link<?php echo ($i); ?>" href="<?php echo ($vo["cn_title"]); ?>" title="<?php echo ($vo["cn_keywords"]); ?>"></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
@@ -111,7 +129,8 @@
   </ul>
 </div>
 </div>
-    <script src="/1001hotel/Public/js/jquery-1.9.1.min.js"></script>
-    <script src="/1001hotel/Public/js/join.js"></script>
+    <script src="/Public/js/jquery-1.9.1.min.js"></script>
+    <script src="/Public/js/common.js"></script>
+    <script src="/Public/js/join.js"></script>
   </body>
 </html>
