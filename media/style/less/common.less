@@ -288,4 +288,98 @@ body{
     }
   }
 }
+
+.banner{
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  overflow: hidden;
+  .banner-list{
+    li{
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      line-height: 700px;
+      text-align: center;
+      color: #fff;
+      font-size: 40px;
+      opacity: 0;
+      &.current{
+        opacity: 1;
+      }
+      &.banner0{
+        .elem0{
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -269px;
+          margin-top: -118px;
+          width: 538px;
+          height: 236px;
+          text-indent: -9999px;
+          img{
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+          }
+        }
+        .elem1{
+          position: absolute;
+          left: 50%;
+          bottom: 180px;
+          margin-left: -107px;
+          width: 214px;
+          height: 13px;
+          text-indent: -9999px;
+          background: url(../../images/banner1-txt2.png) no-repeat center center;
+        }
+      }
+      &.banner1{
+        background-color: #333;
+      }
+      &.banner2{
+        background-color: #666;
+      }
+      &.banner3{
+        background-color: #999;
+      }
+    }
+  }
+  .btn-video-arrow{
+    position: absolute;
+    left: 50%;
+    bottom: 48px;
+    margin-left: -54px;
+    display: block;
+    width: 108px;
+    height: 94px;
+    background: url(../../images/btn-video-arrow.png) no-repeat center;
+    a{
+      display: block;
+      width: 40px;
+      height: 40px;
+      margin: 54px auto 0 auto;
+    }
+  }
+}
+.banner-ctrl{
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  .clearfix;
+  li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    text-indent: -9999px;
+    background: url(../../images/dot1.png) no-repeat center center;
+    &.current{
+      background: url(../../images/dot2.png) no-repeat center center;
+    }
+  }
+}
 /*end of common css*/

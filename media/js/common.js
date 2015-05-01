@@ -122,3 +122,22 @@ $.fn.extend({
     })
   }
 })
+
+
+$.each($('.banner-list li'), function (index, item){
+  var bgImg = $(item).data('image');
+  $(item).css({
+    'background': 'url(' + bgImg + ') no-repeat center center',
+    'background-size': 'cover'
+  })
+})
+$('.banner-ctrl').css({
+  'margin-left': -$('.banner-ctrl').width()/2
+})
+
+var screenHeight = $(window).height();
+$('.banner').height(screenHeight);
+$(window).resize(function(){
+  var screenHeight = $(window).height();
+  $('.banner').height(screenHeight);
+})
