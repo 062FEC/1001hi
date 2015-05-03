@@ -151,3 +151,19 @@ $("#banner-list").myFade({
   timer: 5000,
   btnCtrl: 'banner-ctrl'
 });
+
+
+$(window).scroll(function(){
+  var scrollTop = $(window).scrollTop();
+  if(scrollTop>screenHeight){
+    $('.return-top').css('display', 'block');
+  }else{
+    $('.return-top').css('display', 'none');
+  }
+})
+$('.btn-returnTop').click(function(){
+  $('body,html').animate({
+    'scrollTop': '0'
+  }, 400)
+  return false;
+})
