@@ -1,0 +1,245 @@
+@charset 'utf-8';
+@import 'normalize.less';
+@import 'common.less';
+
+/*about.html css*/
+.overview{
+  .floor-title{
+    background: url(../../images/floor-title1.png) no-repeat left bottom;
+  }
+  .section{
+    .clearfix;
+  }
+}
+.story{
+  .floor-title{
+    background: url(../../images/floor-title2.png) no-repeat left bottom;
+  }
+  .summary{
+    width: 638px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #f6f6f6;
+    .summary-wrap{
+      padding: 20px 30px;
+      border: 1px solid #1b5e5d;
+    }
+  }
+}
+.story-list{
+  margin: 50px 0;
+  background: url(../../images/about-line.jpg) repeat-y top center;
+  dt{
+    text-align: center;
+    span{
+      padding: 8px 11px;
+      color: #fff;
+      background-color: #c59a6d;
+    }
+  }
+  dd{
+    position: relative;
+    margin: 50px 0;
+    font-size: 14px;
+    .clearfix;
+    &.left{
+      .date{
+        .dot{
+          left: -4px;
+          float: left;
+          margin: 6px 15px 0 0;
+        }
+      }
+      .story-box{
+        float: left;
+        margin-left: 70px;
+      }
+    }
+    &.right{
+      .date{
+        margin-left: -90px;
+        .dot{
+          right: -4px;
+          float: right;
+          margin: 6px 0 0 15px;
+        }
+      }
+      .story-box{
+        float: right;
+        margin-right: 70px;
+      }
+    }
+    .date{
+      position: absolute;
+      top: 28px;
+      left: 50%;
+      width: 90px;
+      font-size: 18px;
+      color: #c59a6d;
+      .dot{
+        position: relative;
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        background-color: #c59a6d;
+      }
+    }
+    .story-box{
+      .clearfix;
+      position: relative;
+      width: 372px;
+      padding: 28px;
+      border: 1px solid #ccc;
+      .album{
+        float: left;
+        display: block;
+        width: 64px;
+        height: 64px;
+        padding: 2px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+      }
+      .big-album{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-left: -1px;
+        display: none;
+      }
+    }
+  }
+}
+.adwards{
+  overflow: hidden;
+  .floor-title{
+    background: url(../../images/floor-title3.png) no-repeat left bottom;
+  }
+  .adwards-list{
+    .clearfix;
+    position: relative;
+    left: 0;
+    li{
+      float: left;
+      width: 312px;
+      height: 560px;
+      margin-right: 118px;
+      font-size: 18px;
+      color: #1b5e5d;
+      p{
+        margin: 48px 0 12px 0;
+      }
+      span{
+        display: block;
+        width: 70px;
+        padding-top: 14px;
+        font-size: 14px;
+        color: #898989;
+        border-top: 1px solid #1b5e5d;
+      }
+    }
+  }
+}
+#adwards-slider{
+  width: 1172px;
+  overflow: hidden;
+}
+.brand{
+  overflow: hidden;
+  .floor-title{
+    background: url(../../images/floor-title4.png) no-repeat left bottom;
+  }
+  .brand-list{
+    width: 1225px;
+    .clearfix;
+    li{
+      float: left;
+      width: 202px;
+      height: 470px;
+      margin-right: 39px;
+      a{
+        display: block;
+        width: 200px;
+        height: 420px;
+        margin-top: 22px;
+        border: 1px solid #f6f6f6;
+        .transition(0.4s);
+        img{
+          margin-top: 70px;
+        }
+        &:hover{
+          margin-top: 0;
+          height: 464px;
+          border: 1px solid #ccc;
+          background-color: #fff;
+          .transition(0.4s);
+        }
+      }
+    }
+  }
+}
+.popup-brand{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 60;
+  display: none;
+  .popup-main{
+    width: 960px;
+    height: 540px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -480px;
+    margin-top: -270px;
+    .btn-close{
+      display: block;
+      width: 56px;
+      height: 56px;
+      text-indent: -9999px;
+      position: absolute;
+      right: -28px;
+      top: -28px;
+      background: url(../../images/brand-close.png) no-repeat center center;
+    }
+  }
+}
+.business-block{
+  .clearfix;
+  li{
+    float: left;
+    width: 370px;
+    height: 360px;
+    margin-right: 70px;
+    position: relative;
+    overflow: hidden;
+    img{
+      cursor: pointer;
+    }
+    .overlayer{
+      position: absolute;
+      left: 0;
+      top: 360px;
+      width: 322px;
+      height: 296px;
+      padding: 64px 24px 0 24px;
+      color: #fff;
+      background: rgba(102, 102, 102, 0.8);
+      .btn-close{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        display: block;
+        width: 36px;
+        height: 36px;
+        text-indent: -9999px;
+        background: url(../../images/btn-close.png) no-repeat center center;
+      }
+    }
+  }
+}
+/*end of about.html css*/

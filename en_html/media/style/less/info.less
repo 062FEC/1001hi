@@ -1,0 +1,179 @@
+@charset 'utf-8';
+@import 'normalize.less';
+@import 'common.less';
+
+/*union.html css*/
+
+.info{
+  .floor-wrap{
+    padding-bottom: 40px;
+  }
+  .floor-title{
+    float: left;
+    background: url(../../images/info-title.png) no-repeat left bottom;
+  }
+  .section{
+    .clearfix;
+    margin: 30px 0 60px 0;
+    .left-side{
+      float: left;
+      width: 440px;
+    }
+    .des{
+      float: right;
+      width: 680px;
+    }
+    .viewmore{
+      margin-top: 20px;
+      height: 32px;
+      line-height: 32px;
+    }
+    .assortment{
+      margin-top: 35px;
+      font-size: 18px;
+      color: #bababa;
+      a{
+        color: #bababa;
+        &:hover{
+          color: #999;
+          text-decoration: underline;
+        }
+      }
+    }
+    .btn-info-popup{
+      position: relative;
+      padding-right: 43px;
+      font-size: 18px;
+      color: #c59a6d;
+      .icon-enter{
+        position: absolute;
+        right: 0;
+        top: -3px;
+      }
+    }
+  }
+}
+.info-header{
+  .clearfix;
+  .floor-title{
+    float: left;
+  }
+}
+.info-nav{
+  float: right;
+  width: 860px;
+  margin-top: 20px;
+  .clearfix;
+  .info-nav-list{
+    .clearfix;
+    width: 600px;
+    float: left;
+    margin-top: 5px;
+    li{
+      float: left;
+      margin: 0 27px;
+      a{
+        color: #989898;
+        padding: 5px 0;
+        border-bottom: 3px solid #fff;
+        &:hover{
+          color: #666;
+        }
+        &.current{
+          color: #010101;
+          border-bottom: 3px solid #1b5e5d;
+        }
+      }
+    }
+  }
+  .info-searchBar{
+    float: right;
+    width: 227px;
+    height: 27px;
+    border: 1px solid #ddd;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -o-border-radius: 24px;
+    -ms-border-radius: 24px;
+    border-radius: 24px;
+    position: relative;
+    .searchfield{
+      position: absolute;
+      left: 10px;
+      top: 0;
+      width: 200px;
+      height: 27px;
+      border: none;
+      &:focus{
+        outline: none;
+      }
+    }
+    .btn-search{
+      position: absolute;
+      right: 8px;
+      top: 0;
+      display: block;
+      width: 27px;
+      height: 27px;
+      border: none;
+      text-indent: -9999px;
+      background: url(../../images/icon12.png) no-repeat center center;
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+}
+.info-popup{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 60;
+  display: none;
+  .main{
+    width: 940px;
+    height: 440px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -470px;
+    margin-top: -270px;
+    padding: 50px 0;
+    background-color: #fff;
+    .btn-close {
+      display: block;
+      width: 56px;
+      height: 56px;
+      text-indent: -9999px;
+      position: absolute;
+      right: -28px;
+      top: -28px;
+      background: url(../../images/brand-close.png) no-repeat center center;
+    }
+    .wrap{
+      height: 380px;
+      padding: 0 60px;
+      overflow: auto;
+    }
+  }
+}
+.info-more{
+  width: 384px;
+  height: 90px;
+  margin: 0 auto 84px auto;
+  padding: 15px;
+  background-color: #f6f6f6;
+  a{
+    display: block;
+    height: 88px;
+    line-height: 88px;
+    text-align: center;
+    color: #1b5e5d;
+    font-size: 22px;
+    border: 1px solid #1b5e5d;
+  }
+}
+/*end of union.html css*/
