@@ -11,7 +11,7 @@ $(function(){
 		aboutFloorTop1 = $('#about-floor1').offset().top - subnavH,
 		aboutFloorTop2 = $('#about-floor2').offset().top - subnavH,
 		aboutFloorTop3 = $('#about-floor3').offset().top - subnavH,
-		scrollTop = $('body,html').scrollTop(),
+		footerTop = $('.footer-wrap').offset().top - subnavH,
 		$subnav = $('.subnav')
 	;
 	function detectAboutFloating(){
@@ -28,7 +28,7 @@ $(function(){
 			$subnav.addClass('fixed');
 			$subnav.find('a').removeClass('current');
 			$subnav.find('a').eq(2).addClass('current');
-		}else if(scrollTop>=aboutFloorTop3){
+		}else if(scrollTop>=aboutFloorTop3 && scrollTop<footerTop){
 			$subnav.addClass('fixed');
 			$subnav.find('a').removeClass('current');
 			$subnav.find('a').eq(3).addClass('current');
