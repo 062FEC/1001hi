@@ -61,10 +61,22 @@
 
     <div class="video-area">
       <div class="video-wrap">
-        <embed id="index-video" src="http://yuntv.letv.com/bcloud.swf" allowFullScreen="true" quality="high" width="1024" height="768" align="middle" allowScriptAccess="always" flashvars="uu=de67558d98&vu=f27da0117d&auto_play=0&gpcflag=1&width=1024&height=768" type="application/x-shockwave-flash"></embed>
+        <!--<embed id="index-video" src="http://yuntv.letv.com/bcloud.swf" allowFullScreen="true" quality="high" width="1024" height="768" align="middle" allowScriptAccess="always" flashvars="uu=de67558d98&vu=f27da0117d&auto_play=0&gpcflag=1&width=1024&height=768" type="application/x-shockwave-flash"></embed>
         <script id="autoJsf27da0117d" type="text/javascript">
           var pNode=document.getElementById("autoJsf27da0117d").parentNode,pnd=pNode.style,dWidth=pnd.width,pHeight=pnd.height,dHeight=ReCallHeight(pHeight,pNode);function ReCallHeight(e,t){if(e==""||e=="100%"){var n=t.parentNode,r=t.parentNode.style.height;if(r)return r;var i=ReCallHeight(r,n);return i}return e} var letvcloud_player_conf =  {"uu":"de67558d98","vu":"f27da0117d","auto_play":0,"gpcflag":1,"width": dWidth,"height": dHeight};
+        </script>-->
+        <p id="video-uu1" class="video-param">9477278da8</p>
+        <p id="video-vu1" class="video-param">6b89ef7a9a</p>
+        <script type="text/javascript">
+          var videoUU1 = document.getElementById('video-uu1').innerHTML;
+          var videoVU1 = document.getElementById('video-vu1').innerHTML;
+          var letvcloud_player_conf = {
+            "uu": videoUU1,
+            "vu": videoVU1,
+            "auto_play": 0
+          };
         </script>
+        <script type="text/javascript" src="http://yuntv.letv.com/bcloud.js"></script>
       </div>
 
       <div class="footer">
